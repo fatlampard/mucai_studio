@@ -1,0 +1,100 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta property="og:image" content="http://mucai-studio.com/images/fb.jpg" ></meta>
+        <meta property="og:title" content="木才設計工作室 | Mucai Studio" ></meta>
+        <meta property="og:description" content="木才設計工作室源於對山林的崇敬與木頭的喜愛，專注於木材料的創新設計。以實驗的精神對木材深入探索，順應材料的性格與找尋出心中設計發展成為設計作品。" ></meta>
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <title>山之光 ｜ The Light of the Mountain</title>
+        <link rel="stylesheet" href="css/main.css">
+        <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <script type="text/javascript" src="js/lib/jquery.retina.js"></script>
+        <script type="text/javascript" src="js/lib/flipsnap.min.js"></script>
+    </head>
+    <body style="text-align:center;">
+        <div class="nav">
+            <a href="index.html"><span class="logo"></span></a>
+
+            <input type="checkbox" id="nav--list-toggle" class="nav--list-toggle" ng-model="navMaskActive">
+            <label for="nav--list-toggle" class="nav--list-toggle--avatar">
+                <div class="nav--list-toggle--icon">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </label>
+
+            <ul class="nav-list">
+                <li class="nav-item"><a class="nav-link nav-link--active" href="#"><span>Mountain</span></a></li><li 
+                    class="nav-item"><a class="nav-link" href="tree.html"><span>Tree</span></a></li><li 
+                    class="nav-item"><a class="nav-link" href="arch.html"><span>Arch</span></a></li><li 
+                    class="nav-item"><a class="nav-link" href="about.html"><span>About</span></a></li><li 
+                    class="nav-item"><a class="nav-link nav-link--preorder" href="#" onclick="ga('send', 'event', 'preorder', 'navToPreorder', 'header_nav')"><span>Pre-order</span></a></li><li 
+                    class="nav-item"><a class="nav-link" target="_blank" href="http://www.facebook.com/sharer/sharer.php?u=http://mucai-studio.com/" onclick="ga('send', 'event', 'sn', 'share', 'fb')"><span>Share</span></a></li>
+            </ul>
+        </div>
+        <div class="hero" style="">
+            <img class="wretina" src="images/hero01.jpg" alt="">
+        </div>
+
+        <div class="section">
+            <h3>朝著光的方向前進，是山的去向，也是大地的力量</h3>
+            <p>山之光是盞山形吊燈，由二到四層堆疊的曲木環所組成。<br>溫暖的木頭搭配冰冷的水泥燈座呈現出強烈又溫和的對比。</p>
+            <p class="en">The Light of The Mountain is a mountain shape pendant light. It's made of 2-4 different sized<br>bending plywood cone rings. The plywood cone rings with a concrete lamp holder presents the<br>warm and cold material contrasts.</p>
+        </div>
+        
+        <div class="slider-wrapper">
+            <div class="flipsnap slider slider--4">
+                <img class="slide wretina" src="images/slide01_1.jpg" alt="">
+                <img class="slide wretina" src="images/slide01_2.jpg" alt="">
+                <img class="slide wretina" src="images/slide01_3.jpg" alt="">
+                <img class="slide wretina" src="images/slide01_4.jpg" alt="">
+            </div>
+
+            <ul class="slider-pagination">
+               <li class="pagination-ctrl pagination-ctrl--active" onmouseover="goToPage(1)"><span></span></li>
+               <li class="pagination-ctrl" onmouseover="goToPage(2)"><span></span></li>
+               <li class="pagination-ctrl" onmouseover="goToPage(3)"><span></span></li>
+               <li class="pagination-ctrl" onmouseover="goToPage(4)"><span></span></li>
+            </ul>
+        </div>
+        <div class="section">
+            <p>山之光可以隨意轉動調整光線照明的方向，<br>可以照在牆上形成間接光源或照在任何需要光照的地方。</p>
+            <p class="en">It's able to illuminate different direction by freely adjusting the position of those plywood cone rings. <br>You can illuminate the space or object you want to illuminate. </p>
+        </div>
+
+        <div class="slider">
+            <img class="wretina" src="images/slide01_5.jpg" alt="" style="width:100%;">
+        </div>
+        <div class="section">
+            <p>經過精確計算60度的斜角在製程上剛好可以讓木紋對齊，<br>整個曲木環看起來就像沒有接縫一樣。<br>在運送與收納時可以由小到大堆疊在一起減少使用空間。</p>
+            <p class="en">
+                The entire cone rings look like a seamless solid wooden piece<br>by accurately calculated the angle of the cone to make sure the seams are invisible.<br>It's able to stack together from the smallest to biggest to reduce the use of space during transport or storage.
+            </p>
+        </div>
+        
+        <iframe src="form.html" id="preorder_form" frameborder="0"></iframe>
+
+        <p class="footer">All rights reserved © 2014 <br class="m"> Mucai Design Studio</p>
+        <script>
+        </script>
+        <script>
+            var totalPage=4;
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+            ga('create', 'UA-43472656-3', 'mucai-studio.com');
+            ga('require', 'displayfeatures');
+            ga('send', 'pageview');
+          //ga('send', 'event', 'preorder_category', 'open_action', 'preorder_open_label')
+
+          //$('#preorder_form').contentWindow.targetFunction();
+          //parent.functionName()
+        </script>
+        <script src="js/main.js"></script>
+
+    </body>
+</html>

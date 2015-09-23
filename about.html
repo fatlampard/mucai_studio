@@ -1,0 +1,90 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta property="og:image" content="http://mucai-studio.com/images/fb.jpg" ></meta>
+        <meta property="og:title" content="木才設計工作室 | Mucai Studio" ></meta>
+        <meta property="og:description" content="木才設計工作室源於對山林的崇敬與木頭的喜愛，專注於木材料的創新設計。以實驗的精神對木材深入探索，順應材料的性格與找尋出心中設計發展成為設計作品。" ></meta>
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <title>關於木才</title>
+        <link rel="stylesheet" href="css/main.css">
+        <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <script type="text/javascript" src="js/lib/jquery.retina.js"></script>
+    </head>
+    <body style="text-align:center;">
+        <div class="nav">
+            <a href="index.html"><span class="logo"></span></a>
+            <input type="checkbox" id="nav--list-toggle" class="nav--list-toggle" ng-model="navMaskActive">
+            <label for="nav--list-toggle" class="nav--list-toggle--avatar">
+                <div class="nav--list-toggle--icon">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </label>
+            <ul class="nav-list">
+                <li class="nav-item"><a class="nav-link" href="index.html"><span>Mountain</span></a></li><li 
+                    class="nav-item"><a class="nav-link" href="tree.html"><span>Tree</span></a></li><li 
+                    class="nav-item"><a class="nav-link" href="arch.html"><span>Arch</span></a></li><li 
+                    class="nav-item"><a class="nav-link nav-link--active" href="about.html"><span>About</span></a></li><li 
+                    class="nav-item"><a class="nav-link nav-link--preorder" href="#" onclick="ga('send', 'event', 'preorder', 'navToPreorder', 'header_nav')"><span>Pre-order</span></a></li><li 
+                    class="nav-item"><a class="nav-link" target="_blank" href="http://www.facebook.com/sharer/sharer.php?u=http://mucai-studio.com/" onclick="ga('send', 'event', 'sn', 'share', 'fb')"><span>Share</span></a></li>
+            </ul>
+        </div>
+        <div class="hero" style="">
+            <img class="wretina" src="images/about.png" alt="">
+            <p>木才設計工作室源於對山林的崇敬與木頭的喜愛，<br>專注於木材料的創新設計。<br>以實驗的精神對木材深入探索，<br>順應材料的性格與找尋出心中設計發展成為設計作品。<br>
+            contact: <a href="mailto:k.chiahung@gmail.com" style="text-decoration:underline;">k.chiahung@gmail.com</a></p>
+        </div>
+
+        <iframe src="form.html" id="preorder_form" frameborder="0"></iframe>
+
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+            ga('create', 'UA-43472656-3', 'mucai-studio.com');
+            ga('require', 'displayfeatures');
+            ga('send', 'pageview');
+
+            index_init();
+            function index_init(){
+              if(checkDevice()=='phone'){
+                $('.wretina').each(function(){
+                  if($(this).attr('src').indexOf('mobile')==-1){
+                    $(this).attr('src',$(this).attr('src').replace('images/','images/mobile/'));
+                  }
+                })
+                $('body').addClass('phone');
+              }else if(checkDevice()=='pad'){
+                $('body').addClass('pad');
+              }
+              $('.wretina').retina("@2x");
+              $('.nav-link--preorder').on('click',scrollToPreorder);
+            }
+
+            function checkDevice(){
+              if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+                if( $('body').outerWidth()<767 ){
+                  return 'phone';
+                }else{
+                  return 'pad';
+                }
+              }else{
+                return 'desktop';
+              }
+            }
+            function scrollToPreorder(e){
+                e.stopPropagation();
+                e.preventDefault();
+                $('#nav--list-toggle').prop('checked', false)
+                $('body').animate({
+                  scrollTop:$('#preorder_form').offset().top
+                },1200,function(){
+                });
+            }
+        </script>
+    </body>
+</html>

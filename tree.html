@@ -1,0 +1,96 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta property="og:image" content="http://mucai-studio.com/images/fb.jpg" ></meta>
+        <meta property="og:title" content="木才設計工作室 | Mucai Studio" ></meta>
+        <meta property="og:description" content="木才設計工作室源於對山林的崇敬與木頭的喜愛，專注於木材料的創新設計。以實驗的精神對木材深入探索，順應材料的性格與找尋出心中設計發展成為設計作品。" ></meta>
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <title>時光樹 ｜ The Light of the Trees</title>
+        <link rel="stylesheet" href="css/main.css">
+        <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <script type="text/javascript" src="js/lib/jquery.retina.js"></script>
+        <script type="text/javascript" src="js/lib/flipsnap.min.js"></script>
+    </head>
+    <body style="text-align:center;">
+        <div class="nav">
+            <a href="index.html"><span class="logo"></span></a>
+
+            <input type="checkbox" id="nav--list-toggle" class="nav--list-toggle" ng-model="navMaskActive">
+            <label for="nav--list-toggle" class="nav--list-toggle--avatar">
+                <div class="nav--list-toggle--icon">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </label>
+
+            <ul class="nav-list">
+                <li class="nav-item"><a class="nav-link" href="index.html"><span>Mountain</span></a></li><li 
+                    class="nav-item"><a class="nav-link nav-link--active" href="tree.html"><span>Tree</span></a></li><li 
+                    class="nav-item"><a class="nav-link" href="arch.html"><span>Arch</span></a></li><li 
+                    class="nav-item"><a class="nav-link" href="about.html"><span>About</span></a></li><li 
+                    class="nav-item"><a class="nav-link nav-link--preorder" href="#" onclick="ga('send', 'event', 'preorder', 'navToPreorder', 'header_nav')"><span>Pre-order</span></a></li><li 
+                    class="nav-item"><a class="nav-link" target="_blank" href="http://www.facebook.com/sharer/sharer.php?u=http://mucai-studio.com/" onclick="ga('send', 'event', 'sn', 'share', 'fb')"><span>Share</span></a></li>
+            </ul>
+        </div>
+        <div class="hero" style="padding-top:40px;">
+            <video autoplay loop style="width:100%;" class="m_no">
+                <source src="video/tree.ogv" type="video/ogg">
+                <source src="video/tree.m4v" type="video/mp4">
+                <source src="video/tree.webm" type="video/webm">
+                <img class="wretina" src="video/tree.jpg" alt="">
+            </video>
+            <img class="wretina hero_text m_no" src="images/hero02_text.png" alt="">
+            <img class="wretina m_only" src="images/hero02.jpg" alt="" style="matgin-top:20px;">
+        </div>
+
+        <div class="section">
+            <h3>樹木在明滅間<br class="m">以另一種方式存在</h3>
+            <p>時光樹是一個具有生命感的時鐘。</p>
+            <p class="en">The Light of The Tree is a living clock.</p>
+        </div>
+        
+        <div class="slider-wrapper">
+            <div class="flipsnap slider slider--3">
+                <img class="slide wretina" src="images/slide02_1.jpg" alt="">
+                <img class="slide wretina" src="images/slide02_2.jpg" alt="">
+                <img class="slide wretina" src="images/slide02_3.jpg" alt="">
+            </div>
+
+            <ul class="slider-pagination">
+               <li class="pagination-ctrl pagination-ctrl--active" onmouseover="goToPage(1)"><span></span></li>
+               <li class="pagination-ctrl" onmouseover="goToPage(2)"><span></span></li>
+               <li class="pagination-ctrl" onmouseover="goToPage(3)"><span></span></li>
+            </ul>
+        </div>
+        <div class="section">
+            <p>鐘面是由木薄板與光纖捲製而成。<br>在沒有光透出時看似一般樹幹年輪，但當秒針的光線從鐘面透出緩緩移動時，<br>樹幹的維管束隨著時光從養分的運輸轉化成光線的傳送，<br>彷彿又重新有了生命隨著時光呼吸，在明滅間讓樹幹得以不同方式存在。</p>
+            <p class="en" style="max-width:550px;">The clock surface is made of veneer and fibre optic. This material makes the lights being abled to penetrate through the clock surface. Without the lights, the surface just looks like the tree rings. When the lights travel through the surface, the clock would look like a living tree with spirits lingering around.
+            </p>
+        </div>
+        
+        <iframe src="form.html" id="preorder_form" frameborder="0"></iframe>
+
+        <p class="footer">All rights reserved © 2014 <br class="m"> Mucai Design Studio</p>
+
+
+        <script>
+            var totalPage=3;
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+            ga('create', 'UA-43472656-3', 'mucai-studio.com');
+            ga('require', 'displayfeatures');
+            ga('send', 'pageview');
+          //ga('send', 'event', 'preorder_category', 'open_action', 'preorder_open_label')
+
+          //$('#preorder_form').contentWindow.targetFunction();
+          //parent.functionName()
+        </script>
+        <script src="js/main.js"></script>
+
+    </body>
+</html>

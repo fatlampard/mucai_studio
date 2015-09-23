@@ -1,0 +1,86 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta property="og:image" content="http://mucai-studio.com/images/fb.jpg" ></meta>
+        <meta property="og:title" content="木才設計工作室 | Mucai Studio" ></meta>
+        <meta property="og:description" content="木才設計工作室源於對山林的崇敬與木頭的喜愛，專注於木材料的創新設計。以實驗的精神對木材深入探索，順應材料的性格與找尋出心中設計發展成為設計作品。" ></meta>
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <title>三重凳 ｜ The Triples of the arches</title>
+        <link rel="stylesheet" href="css/main.css">
+        <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <script type="text/javascript" src="js/lib/jquery.retina.js"></script>
+        <script type="text/javascript" src="js/lib/flipsnap.min.js"></script>
+    </head>
+    <body style="text-align:center;">
+        <div class="nav">
+            <a href="index.html"><span class="logo"></span></a>
+
+            <input type="checkbox" id="nav--list-toggle" class="nav--list-toggle" ng-model="navMaskActive">
+            <label for="nav--list-toggle" class="nav--list-toggle--avatar">
+                <div class="nav--list-toggle--icon">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </label>
+
+            <ul class="nav-list">
+                <li class="nav-item"><a class="nav-link" href="index.html"><span>Mountain</span></a></li><li 
+                    class="nav-item"><a class="nav-link" href="tree.html"><span>Tree</span></a></li><li 
+                    class="nav-item"><a class="nav-link nav-link--active" href="arch.html"><span>Arch</span></a></li><li 
+                    class="nav-item"><a class="nav-link" href="about.html"><span>About</span></a></li><li 
+                    class="nav-item"><a class="nav-link nav-link--preorder" href="#" onclick="ga('send', 'event', 'preorder', 'navToPreorder', 'header_nav')"><span>Pre-order</span></a></li><li 
+                    class="nav-item"><a class="nav-link" target="_blank" href="http://www.facebook.com/sharer/sharer.php?u=http://mucai-studio.com/" onclick="ga('send', 'event', 'sn', 'share', 'fb')"><span>Share</span></a></li>
+            </ul>
+        </div>
+        <div class="hero" style="">
+            <img class="wretina" src="images/hero03.jpg" alt="">
+        </div>
+
+        <div class="section">
+            <h3>簡潔的三角結構</h3>
+            <p>三重凳由三片從坐面延伸至椅腳的彎曲膠合板組成。<br>試圖在 2D 傳統曲木的限制下，彎曲出較多變化角度的椅凳。<br>中空的造型適合做為在桑拿房中使用的凳子，也適合大多數的環境。</p>
+            <p class="en" style="max-width:522px;">The Triple of The Arch is constructed from three 10 mm bending birch plywoods extended from leg. It's tried to perform a multi-angle stool in the limit of 2D bending plywood process. And only the leg are joint together. The hollow triangle-shaped seating is perfect suit for sauna and also suit for most of situation.</p>
+        </div>
+        
+        <div class="slider-wrapper">
+            <div class="flipsnap slider slider--3">
+                <img class="slide wretina" src="images/slide03_1.jpg" alt="">
+                <img class="slide wretina" src="images/slide03_2.jpg" alt="">
+                <img class="slide wretina" src="images/slide03_3.jpg" alt="">
+            </div>
+
+            <ul class="slider-pagination">
+               <li class="pagination-ctrl pagination-ctrl--active" onmouseover="goToPage(1)"><span></span></li>
+               <li class="pagination-ctrl" onmouseover="goToPage(2)"><span></span></li>
+               <li class="pagination-ctrl" onmouseover="goToPage(3)"><span></span></li>
+            </ul>
+        </div>
+        
+        <iframe src="form.html" id="preorder_form" frameborder="0"></iframe>
+
+        <p class="footer">All rights reserved © 2014 <br class="m"> Mucai Design Studio</p>
+
+        <script src="js/main.js"></script>
+        <script>
+            var totalPage=3;
+
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+            ga('create', 'UA-43472656-3', 'mucai-studio.com');
+            ga('require', 'displayfeatures');
+            ga('send', 'pageview');
+
+
+          //ga('send', 'event', 'preorder_category', 'open_action', 'preorder_open_label')
+
+          //$('#preorder_form').contentWindow.targetFunction();
+          //parent.functionName()
+        </script>
+
+    </body>
+</html>
