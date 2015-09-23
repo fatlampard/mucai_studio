@@ -1,0 +1,6 @@
+.gitignore
+fire_app_log.txt
+config.rb
+sass/
+.sass-cache
+*.css.map
